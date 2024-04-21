@@ -1,0 +1,329 @@
+● vivek-HP-Laptop-17-cp0xxx
+    State: degraded
+     Jobs: 0 queued
+   Failed: 1 units
+    Since: Sun 2024-04-21 19:27:11 CEST; 4h 7min ago
+   CGroup: /
+           ├─user.slice 
+           │ └─user-1000.slice 
+           │   ├─user@1000.service …
+           │   │ ├─session.slice 
+           │   │ │ ├─org.gnome.SettingsDaemon.MediaKeys.service 
+           │   │ │ │ └─2303 /usr/libexec/gsd-media-keys
+           │   │ │ ├─org.gnome.SettingsDaemon.Smartcard.service 
+           │   │ │ │ └─2315 /usr/libexec/gsd-smartcard
+           │   │ │ ├─org.gnome.SettingsDaemon.Datetime.service 
+           │   │ │ │ └─2294 /usr/libexec/gsd-datetime
+           │   │ │ ├─xdg-document-portal.service 
+           │   │ │ │ ├─1964 /usr/libexec/xdg-document-portal
+           │   │ │ │ └─1974 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_u>
+           │   │ │ ├─org.gnome.SettingsDaemon.Housekeeping.service 
+           │   │ │ │ └─2298 /usr/libexec/gsd-housekeeping
+           │   │ │ ├─xdg-desktop-portal.service 
+           │   │ │ │ └─2499 /usr/libexec/xdg-desktop-portal
+           │   │ │ ├─org.freedesktop.IBus.session.GNOME.service 
+           │   │ │ │ ├─2287 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XD>
+           │   │ │ │ ├─2290 /usr/bin/ibus-daemon --panel disable
+           │   │ │ │ ├─2369 /usr/libexec/ibus-dconf
+           │   │ │ │ ├─2371 /usr/libexec/ibus-extension-gtk3
+           │   │ │ │ └─2473 /usr/libexec/ibus-engine-simple
+           │   │ │ ├─org.gnome.SettingsDaemon.Keyboard.service 
+           │   │ │ │ └─2302 /usr/libexec/gsd-keyboard
+           │   │ │ ├─pipewire-media-session.service 
+           │   │ │ │ └─1935 /usr/bin/pipewire-media-session
+           │   │ │ ├─org.gnome.SettingsDaemon.A11ySettings.service 
+           │   │ │ │ └─2288 /usr/libexec/gsd-a11y-settings
+           │   │ │ ├─pulseaudio.service 
+           │   │ │ │ └─1936 /usr/bin/pulseaudio --daemonize=no --log-target=jou>
+           │   │ │ ├─org.gnome.SettingsDaemon.Wacom.service 
+           │   │ │ │ └─2328 /usr/libexec/gsd-wacom
+           │   │ │ ├─org.gnome.SettingsDaemon.Sharing.service 
+           │   │ │ │ └─2313 /usr/libexec/gsd-sharing
+           │   │ │ ├─org.gnome.SettingsDaemon.Color.service 
+           │   │ │ │ └─2292 /usr/libexec/gsd-color
+           │   │ │ ├─org.gnome.SettingsDaemon.ScreensaverProxy.service 
+           │   │ │ │ └─2312 /usr/libexec/gsd-screensaver-proxy
+           │   │ │ ├─org.gnome.SettingsDaemon.PrintNotifications.service 
+           │   │ │ │ ├─2310 /usr/libexec/gsd-print-notifications
+           │   │ │ │ └─2451 /usr/libexec/gsd-printer
+           │   │ │ ├─org.gnome.SettingsDaemon.Power.service 
+           │   │ │ │ └─2308 /usr/libexec/gsd-power
+           │   │ │ ├─org.gnome.Shell@wayland.service 
+           │   │ │ │ ├─  2082 /usr/bin/gnome-shell
+           │   │ │ │ ├─  2651 /usr/bin/Xwayland :0 -rootless -noreset -accessx >
+           │   │ │ │ ├─ 79606 cat
+           │   │ │ │ ├─ 79607 cat
+           │   │ │ │ ├─ 79609 /opt/google/chrome/chrome_crashpad_handler --moni>
+           │   │ │ │ ├─ 79614 /opt/google/chrome/chrome_crashpad_handler --no-p>
+           │   │ │ │ └─112700 gjs /usr/share/gnome-shell/extensions/ding@raster>
+           │   │ │ ├─org.gnome.SettingsDaemon.XSettings.service 
+           │   │ │ │ ├─2704 /usr/libexec/gsd-xsettings
+           │   │ │ │ └─2756 /usr/libexec/ibus-x11
+           │   │ │ ├─org.gnome.SettingsDaemon.Sound.service 
+           │   │ │ │ └─2320 /usr/libexec/gsd-sound
+           │   │ │ ├─pipewire.service 
+           │   │ │ │ └─1934 /usr/bin/pipewire
+           │   │ │ └─org.gnome.SettingsDaemon.Rfkill.service 
+           │   │ │   └─2311 /usr/libexec/gsd-rfkill
+           │   │ ├─background.slice 
+           │   │ │ └─tracker-miner-fs-3.service 
+           │   │ │   └─2494 /usr/libexec/tracker-miner-fs-3
+           │   │ ├─app.slice 
+           │   │ │ ├─gvfs-goa-volume-monitor.service 
+           │   │ │ │ └─2199 /usr/libexec/gvfs-goa-volume-monitor
+           │   │ │ ├─app-gnome-ZSTray-2602.scope 
+           │   │ │ │ ├─2602 sh -c systemctl --user import-environment DISPLAY X>
+           │   │ │ │ ├─2606 /opt/zscaler/bin/ZSTray
+           │   │ │ │ ├─2843 dconf watch /system/proxy/
+           │   │ │ │ ├─2857 /usr/lib/x86_64-linux-gnu/qt5/libexec/QtWebEnginePr>
+           │   │ │ │ ├─2858 /usr/lib/x86_64-linux-gnu/qt5/libexec/QtWebEnginePr>
+           │   │ │ │ ├─2860 /usr/lib/x86_64-linux-gnu/qt5/libexec/QtWebEnginePr>
+           │   │ │ │ └─2886 /usr/lib/x86_64-linux-gnu/qt5/libexec/QtWebEnginePr>
+           │   │ │ ├─xdg-permission-store.service 
+           │   │ │ │ └─1968 /usr/libexec/xdg-permission-store
+           │   │ │ ├─snap.snap-store.snap-store-c713ac49-2367-4d1f-9719-6926f47>
+           │   │ │ │ └─2440 /snap/snap-store/1113/usr/bin/snap-store --gapplica>
+           │   │ │ ├─app-gnome-code-8095.scope 
+           │   │ │ │ ├─  8095 /usr/share/code/code --unity-launch
+           │   │ │ │ ├─  8100 /usr/share/code/code --type=zygote --no-zygote-sa>
+           │   │ │ │ ├─  8101 /usr/share/code/code --type=zygote
+           │   │ │ │ ├─  8103 /usr/share/code/code --type=zygote
+           │   │ │ │ ├─  8117 /usr/share/code/chrome_crashpad_handler --monitor>
+           │   │ │ │ ├─  8131 /usr/share/code/code --type=gpu-process --crashpa>
+           │   │ │ │ ├─  8139 /usr/share/code/code --type=utility --utility-sub>
+           │   │ │ │ ├─  8262 /usr/share/code/code --type=utility --utility-sub>
+           │   │ │ │ ├─ 14806 /usr/share/code/code --type=renderer --crashpad-h>
+           │   │ │ │ ├─ 15028 /usr/share/code/code --type=utility --utility-sub>
+           │   │ │ │ ├─ 15390 /usr/share/code/code --type=utility --utility-sub>
+           │   │ │ │ ├─ 15400 /usr/share/code/code --type=utility --utility-sub>
+           │   │ │ │ ├─ 15454 /usr/share/code/code /home/vivek/.vscode/extensio>
+           │   │ │ │ ├─ 15553 /usr/share/code/code /home/vivek/.vscode/extensio>
+           │   │ │ │ ├─ 16132 /usr/bin/bash --init-file /usr/share/code/resourc>
+           │   │ │ │ ├─ 20857 /usr/share/code/code /usr/share/code/resources/ap>
+           │   │ │ │ ├─ 20883 /usr/share/code/code --type=renderer --crashpad-h>
+           │   │ │ │ ├─ 21565 /home/vivek/OneDrive/2023-2024/stage/m2-internshi>
+           │   │ │ │ ├─ 21566 /home/vivek/OneDrive/2023-2024/stage/m2-internshi>
+           │   │ │ │ ├─ 21567 /home/vivek/OneDrive/2023-2024/stage/m2-internshi>
+           │   │ │ │ ├─ 21574 /usr/bin/bash --init-file /usr/share/code/resourc>
+           │   │ │ │ ├─ 22724 /usr/bin/bash --init-file /usr/share/code/resourc>
+           │   │ │ │ ├─132736 /home/vivek/OneDrive/2023-2024/stage/m2-internshi>
+           │   │ │ │ ├─132772 /usr/bin/bash --init-file /usr/share/code/resourc>
+           │   │ │ │ ├─140723 bash
+           │   │ │ │ ├─155534 python
+           │   │ │ │ └─156865 /usr/bin/bash --init-file /usr/share/code/resourc>
+           │   │ │ ├─app-gnome-at\x2dspi\x2ddbus\x2dbus-2072.scope 
+           │   │ │ │ └─2072 /usr/libexec/at-spi-bus-launcher --launch-immediate>
+           │   │ │ ├─app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-2348.scop>
+           │   │ │ │ └─2348 /usr/libexec/evolution-data-server/evolution-alarm->
+           │   │ │ ├─app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-2363.>
+           │   │ │ │ └─2363 /usr/libexec/gsd-disk-utility-notify
+           │   │ │ ├─evolution-calendar-factory.service 
+           │   │ │ │ └─2194 /usr/libexec/evolution-calendar-factory
+           │   │ │ ├─xdg-desktop-portal-gnome.service 
+           │   │ │ │ └─2514 /usr/libexec/xdg-desktop-portal-gnome
+           │   │ │ ├─dconf.service 
+           │   │ │ │ └─2170 /usr/libexec/dconf-service
+           │   │ │ ├─app-gnome-google\x2dchrome-79601.scope 
+           │   │ │ │ ├─ 79601 /opt/google/chrome/chrome
+           │   │ │ │ ├─ 79620 /opt/google/chrome/chrome --type=zygote --no-zygo>
+           │   │ │ │ ├─ 79621 /opt/google/chrome/chrome --type=zygote --crashpa>
+           │   │ │ │ ├─ 79623 /opt/google/chrome/chrome --type=zygote --crashpa>
+           │   │ │ │ ├─ 79647 /opt/google/chrome/chrome --type=gpu-process --cr>
+           │   │ │ │ ├─ 79649 /opt/google/chrome/chrome --type=utility --utilit>
+           │   │ │ │ ├─ 79660 /opt/google/chrome/chrome --type=utility --utilit>
+           │   │ │ │ ├─ 79807 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 79835 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 79861 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 79921 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 80095 /opt/google/chrome/chrome --type=utility --utilit>
+           │   │ │ │ ├─ 80201 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 80203 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 80755 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 84553 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 86387 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 86722 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 87598 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 87742 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 88155 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 88207 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─ 88495 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─122878 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─131269 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─139271 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─140217 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─142442 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─156819 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─157153 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─157625 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─157916 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─160870 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─161478 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─161630 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─173965 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─177369 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ ├─181146 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ │ └─183446 /opt/google/chrome/chrome --type=renderer --crash>
+           │   │ │ ├─app-gnome\x2dsession\x2dmanager.slice 
+           │   │ │ │ └─gnome-session-manager@ubuntu.service 
+           │   │ │ │   ├─2056 /usr/libexec/gnome-session-binary --systemd-servi>
+           │   │ │ │   ├─2079 /usr/bin/dbus-daemon --config-file=/usr/share/def>
+           │   │ │ │   └─2269 /usr/libexec/at-spi2-registryd --use-gnome-session
+           │   │ │ ├─gvfs-daemon.service 
+           │   │ │ │ ├─2044 /usr/libexec/gvfsd
+           │   │ │ │ ├─2050 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+           │   │ │ │ ├─2255 /usr/libexec/gvfsd-trash --spawner :1.13 /org/gtk/g>
+           │   │ │ │ ├─2914 /usr/libexec/gvfsd-network --spawner :1.13 /org/gtk>
+           │   │ │ │ ├─2970 /usr/libexec/gvfsd-dnssd --spawner :1.13 /org/gtk/g>
+           │   │ │ │ └─9077 /usr/libexec/gvfsd-http --spawner :1.13 /org/gtk/gv>
+           │   │ │ ├─evolution-source-registry.service 
+           │   │ │ │ └─2152 /usr/libexec/evolution-source-registry
+           │   │ │ ├─gvfs-udisks2-volume-monitor.service 
+           │   │ │ │ └─2177 /usr/libexec/gvfs-udisks2-volume-monitor
+           │   │ │ ├─snap.snapd-desktop-integration.snapd-desktop-integration.s>
+           │   │ │ │ ├─1937 /snap/snapd-desktop-integration/157/usr/bin/snapd-d>
+           │   │ │ │ └─2143 /snap/snapd-desktop-integration/157/usr/bin/snapd-d>
+           │   │ │ ├─app-org.gnome.Terminal.slice 
+           │   │ │ │ ├─vte-spawn-eaf13667-2541-4360-bdc7-db59447482c6.scope 
+           │   │ │ │ │ └─164717 bash
+           │   │ │ │ ├─vte-spawn-f5fafe79-3124-4527-8f68-087fad03c8e1.scope 
+           │   │ │ │ │ └─173347 bash
+           │   │ │ │ ├─gnome-terminal-server.service 
+           │   │ │ │ │ └─163112 /usr/libexec/gnome-terminal-server
+           │   │ │ │ ├─vte-spawn-88253a5f-19cf-42a7-843d-f1e9f1c89492.scope 
+           │   │ │ │ │ └─164789 bash
+           │   │ │ │ └─vte-spawn-87d73e46-77da-42c6-b7e8-d720f06b83c0.scope 
+           │   │ │ │   ├─183765 bash
+           │   │ │ │   ├─183781 sudo systemctl status
+           │   │ │ │   ├─183782 sudo systemctl status
+           │   │ │ │   ├─183783 systemctl status
+           │   │ │ │   └─183784 less
+           │   │ │ ├─app-gnome-x\x2dterminal\x2demulator-156191.scope 
+           │   │ │ │ ├─156191 xterm -class UXTerm -title uxterm -u8
+           │   │ │ │ ├─156199 bash
+           │   │ │ │ └─156236 python
+           │   │ │ ├─gvfs-gphoto2-volume-monitor.service 
+           │   │ │ │ └─2214 /usr/libexec/gvfs-gphoto2-volume-monitor
+           │   │ │ ├─gnome-session-monitor.service 
+           │   │ │ │ └─2034 /usr/libexec/gnome-session-ctl --monitor
+           │   │ │ ├─xdg-desktop-portal-gtk.service 
+           │   │ │ │ └─2666 /usr/libexec/xdg-desktop-portal-gtk
+           │   │ │ ├─obex.service 
+           │   │ │ │ └─3377 /usr/lib/bluetooth/obexd
+           │   │ │ ├─gvfs-metadata.service 
+           │   │ │ │ └─2178 /usr/libexec/gvfsd-metadata
+           │   │ │ ├─dbus.service 
+           │   │ │ │ ├─  1963 /usr/bin/dbus-daemon --session --address=systemd:>
+           │   │ │ │ ├─  2146 /usr/libexec/gnome-shell-calendar-server
+           │   │ │ │ ├─  2164 /usr/libexec/goa-daemon
+           │   │ │ │ ├─  2198 /usr/libexec/goa-identity-service
+           │   │ │ │ ├─  2266 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.She>
+           │   │ │ │ ├─  2384 /usr/libexec/ibus-portal
+           │   │ │ │ ├─  2540 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Scr>
+           │   │ │ │ ├─ 16747 /usr/lib/libreoffice/program/oosplash --calc file>
+           │   │ │ │ ├─ 16764 /usr/lib/libreoffice/program/soffice.bin --calc f>
+           │   │ │ │ ├─ 68880 /usr/bin/gnome-calendar --gapplication-service
+           │   │ │ │ ├─ 68886 /usr/bin/seahorse --gapplication-service
+           │   │ │ │ └─181042 /usr/bin/nautilus --gapplication-service
+           │   │ │ ├─evolution-addressbook-factory.service 
+           │   │ │ │ └─2226 /usr/libexec/evolution-addressbook-factory
+           │   │ │ ├─gvfs-mtp-volume-monitor.service 
+           │   │ │ │ └─2210 /usr/libexec/gvfs-mtp-volume-monitor
+           │   │ │ └─gvfs-afc-volume-monitor.service 
+           │   │ │   └─2221 /usr/libexec/gvfs-afc-volume-monitor
+           │   │ └─init.scope 
+           │   │   ├─1927 /lib/systemd/systemd --user
+           │   │   └─1928 (sd-pam)
+           │   └─session-2.scope 
+           │     ├─1917 gdm-session-worker [pam/gdm-password]
+           │     ├─1945 /usr/bin/gnome-keyring-daemon --daemonize --login
+           │     ├─1988 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSIO>
+           │     └─1992 /usr/libexec/gnome-session-binary --session=ubuntu
+           ├─init.scope 
+           │ └─1 /lib/systemd/systemd --system --deserialize 46 splash
+           └─system.slice 
+             ├─irqbalance.service 
+             │ └─638 /usr/sbin/irqbalance --foreground
+             ├─apache2.service 
+             │ ├─90324 /usr/sbin/apache2 -k start
+             │ ├─90328 /usr/sbin/apache2 -k start
+             │ ├─90329 /usr/sbin/apache2 -k start
+             │ ├─90330 /usr/sbin/apache2 -k start
+             │ ├─90332 /usr/sbin/apache2 -k start
+             │ └─90333 /usr/sbin/apache2 -k start
+             ├─packagekit.service 
+             │ └─1310 /usr/libexec/packagekitd
+             ├─systemd-udevd.service 
+             │ └─372 /lib/systemd/systemd-udevd
+             ├─zsaservice.service 
+             │ └─679 /opt/zscaler/bin/zsaservice
+             ├─cron.service 
+             │ └─631 /usr/sbin/cron -f -P
+             ├─polkit.service 
+             │ └─646 /usr/libexec/polkitd --no-debug
+             ├─rtkit-daemon.service 
+             │ └─1045 /usr/libexec/rtkit-daemon
+             ├─bluetooth.service 
+             │ └─630 /usr/lib/bluetooth/bluetoothd
+             ├─accounts-daemon.service 
+             │ └─623 /usr/libexec/accounts-daemon
+             ├─wpa_supplicant.service 
+             │ └─677 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+             ├─ModemManager.service 
+             │ └─761 /usr/sbin/ModemManager
+             ├─systemd-journald.service 
+             │ └─315 /lib/systemd/systemd-journald
+             ├─power-profiles-daemon.service 
+             │ └─647 /usr/libexec/power-profiles-daemon
+             ├─unattended-upgrades.service 
+             │ └─765 /usr/bin/python3 /usr/share/unattended-upgrades/unattended>
+             ├─colord.service 
+             │ └─1465 /usr/libexec/colord
+             ├─NetworkManager.service 
+             │ └─633 /usr/sbin/NetworkManager --no-daemon
+             ├─nordvpnd.service 
+             │ └─1007 /usr/sbin/nordvpnd
+             ├─snapd.service 
+             │ └─659 /usr/lib/snapd/snapd
+             ├─gdm.service 
+             │ └─815 /usr/sbin/gdm3
+             ├─switcheroo-control.service 
+             │ └─660 /usr/libexec/switcheroo-control
+             ├─system-postgresql.slice 
+             │ └─postgresql@14-main.service 
+             │   ├─851 /usr/lib/postgresql/14/bin/postgres -D /var/lib/postgres>
+             │   ├─876 postgres: 14/main: checkpointer
+             │   ├─877 postgres: 14/main: background writer
+             │   ├─878 postgres: 14/main: walwriter
+             │   ├─879 postgres: 14/main: autovacuum launcher
+             │   ├─880 postgres: 14/main: stats collector
+             │   └─881 postgres: 14/main: logical replication launcher
+             ├─zstunnel.service 
+             │ └─115841 /opt/zscaler/bin/zstunnel
+             ├─rsyslog.service 
+             │ └─155268 /usr/sbin/rsyslogd -n -iNONE
+             ├─kerneloops.service 
+             │ ├─1008 /usr/sbin/kerneloops --test
+             │ └─1010 /usr/sbin/kerneloops
+             ├─cups-browsed.service 
+             │ └─1005 /usr/sbin/cups-browsed
+             ├─cups.service 
+             │ └─759 /usr/sbin/cupsd -l
+             ├─upower.service 
+             │ └─1306 /usr/libexec/upowerd
+             ├─systemd-oomd.service 
+             │ └─147113 /lib/systemd/systemd-oomd
+             ├─systemd-resolved.service 
+             │ └─566 /lib/systemd/systemd-resolved
+             ├─udisks2.service 
+             │ └─676 /usr/libexec/udisks2/udisksd
+             ├─acpid.service 
+             │ └─624 /usr/sbin/acpid
+             ├─dbus.service 
+             │ └─632 @dbus-daemon --system --address=systemd: --nofork --nopidf>
+             ├─avahi-daemon.service 
+             │ ├─629 avahi-daemon: running [vivek-HP-Laptop-17-cp0xxx.local]
+             │ └─740 avahi-daemon: chroot helper
+             └─systemd-logind.service 
+               └─669 /lib/systemd/systemd-logind
+lines 305-327/327 (END)
+
