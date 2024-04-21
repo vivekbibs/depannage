@@ -3,3 +3,6 @@ sudo apt-get install --reinstall ubuntu-desktop
 
 sudo apt-get remove ubuntu-desktop
 sudo apt-get install ubuntu-desktop
+
+
+https://askubuntu.com/questions/810854/i-deleted-package-python3-on-ubuntu-and-i-have-lost-dashboard-terminal-and-un
