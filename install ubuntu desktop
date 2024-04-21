@@ -1,0 +1,5 @@
+sudo apt-get install --reinstall ubuntu-desktop
+
+
+sudo apt-get remove ubuntu-desktop
+sudo apt-get install ubuntu-desktop
